@@ -137,7 +137,11 @@ def loadContacts(contacts) :
     f.close()     
 def run() :
     contacts = [] # 빈 리스트 변수 초기화
-    loadContacts(contacts)
+    try :
+        loadContacts(contacts)
+    except Exception as ex:
+        print('로딩할 데이터가 없습니다.')
+        input('계속하려면 아무키나 누르세요. > ')
     clearConsole()
     while True :
         sel_menu = getMenu()
