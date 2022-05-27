@@ -10,5 +10,5 @@ BASE_DIR = os.path.dirname(PRJ_ROOT)
 print(BASE_DIR) # 프로젝트 기반 폴더 경로
 
 f = open('./test_console.txt', mode = 'w', encoding = 'UTF-8')
-f.write('Hello, World\n')
+f.write('Hello, World !\n')
 f.close()
